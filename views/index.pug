@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= name
+    h2= count
+    form(action='/set', method='post')
+        input(name= 'name')
+        input(type= 'submit')
